@@ -113,7 +113,8 @@ footer{
 .samba:hover,
 .sertanejo:hover,
 .rock:hover,
-.pop:hover {
+.pop:hover, 
+.container:hover {
     transform: translateY(-3px);
 }
 
