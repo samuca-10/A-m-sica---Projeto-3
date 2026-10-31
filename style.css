@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    padding: 20px;
+    display: flex;
+    background-color: darkorchid;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    border-bottom: 5px solid rgb(193, 70, 255);
+    gap: 20px;
+
+}
+nav ol{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.item1:hover, .item2:hover, .item3:hover{
+    transition: transform 0.4s ease;
+    transform: translateY(-5px);
+}
+nav a{
+    color: aliceblue;
+}
+
+
+main{
+    height: calc(100vh - 140px); /* Pesquisa feita no google de como deixar a página do main ocupada por 100% do conteúdo central, deixando o footer lá em baixo */
+    padding: 20px;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    color: darkorchid;
+}
+
+.navegacao h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: darkorchid;
+}
+
+.aviso{
+    background-color: darkorchid;
+    color: aliceblue;
+    /* border-left: 5px solid aliceblue; */
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+    transition: transform 0.4s ease; /* Pesquisado no google como fazer o efeito de um container subir ao mouse passar por cima do mesmo */
+}
+.aviso:hover{
+    background-color: aliceblue;
+    color: darkorchid;
+    border-left: 5px solid darkorchid;
+    transform: translateY(-5px); /* Valores negativos (dentro do 'translateY' movem o elemento para cima*/
+}
+
+footer{
+    padding: 20px;
+    background-color: darkorchid;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generos,
+.artistas,
+.curiosidades {
+    height: auto;
+    /* Pesquisa no Google: Permite que a página cresça livremente e o footer fique no fundo */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px
+    
+}
+
+.introdução {
+    background-color: #f3e6ff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid darkorchid;
+}
+
+.introdução h2 {
+    color: darkorchid;
+    margin-bottom: 10px;
+}
+
+.mpb,
+.samba,
+.sertanejo,
+.rock,
+.pop,
+.container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+/* Pesquisa no Google: Efeito de elevação ao passar o mouse */
+.mpb:hover,
+.samba:hover,
+.sertanejo:hover,
+.rock:hover,
+.pop:hover {
+    transform: translateY(-3px);
+}
+
+.conteudo_mpb,
+.conteudo_samba,
+.conteudo_sertanejo,
+.conteudo_rock,
+.conteudo_pop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo_mpb h3,
+.conteudo_samba h3,
+.conteudo_sertanejo h3,
+.conteudo_rock h3,
+.conteudo_pop h3 {
+    color: darkorchid;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.origem,
+.historia,
+.caracteristicas,
+.nome_artista,
+.trajetoria,
+.obras {
+    color: #444;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+ol{
+    margin-left: 20px;
+}
+
+.divisao{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+
+.container img{
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+    /* width: 150px; */
+}
+
+.conteudo_container h3{
+    font-size: 1.2rem;
+    color: darkorchid;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
